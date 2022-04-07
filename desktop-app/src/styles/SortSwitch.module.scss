@@ -1,0 +1,36 @@
+.main{
+  height:36px;
+  background-color: var(--switchBackground);
+  border-radius: 5px;
+  position:relative;
+  padding:0 7px;
+  box-sizing: border-box;
+  .values{
+    display:flex;
+    justify-content:space-between;
+    gap:7px;
+    align-items: center;
+    height:100%;
+
+    .valueBox{
+      cursor:pointer;
+      font-size:17px;
+      color:var(--switchText);
+      cursor:pointer;
+      z-index:1;
+      padding:0 5px;
+      text-align: center;
+      transition:color 100ms;
+
+    }
+
+  }
+  .colorBox{
+    position:absolute;
+    top:3px;
+    height:30px;
+    transition:all 100ms;
+    background-color:var(--lightMain);
+    border-radius:5px;
+  }
+}

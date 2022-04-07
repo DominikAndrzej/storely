@@ -1,0 +1,25 @@
+.main{
+  cursor:pointer;
+  width:max-content;
+  position:relative;
+
+  .text{
+    float:left;
+  }
+
+  .arrow{
+    float:left;
+    margin-left:5px;
+  }
+
+  .filterOptions{
+    border-radius: 25px;
+    position:absolute;
+    right:0;
+    top:80px;
+    z-index: 2;
+    width:350px;
+    height:250px;
+    background-color: #fff;
+  }
+}

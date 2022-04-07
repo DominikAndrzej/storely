@@ -1,0 +1,154 @@
+.main{
+  float:left;
+  padding:35px;
+  box-sizing: border-box;
+  width:100%;
+  overflow-y: scroll;
+}
+
+.widgets{
+  display:flex;
+  column-gap:20px;
+  row-gap:20px;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+
+.dashboard{
+  margin-top:30px;
+  width:100%;
+  display:grid;
+  grid-auto-flow:column;
+  gap:20px;
+  //grid-template-columns: 1fr 1fr;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-rows: 1fr 1fr;
+  min-height:700px;
+
+
+
+  table{
+    box-sizing: border-box;
+    width:100%;
+    thead{
+      width:100%;
+      th{
+
+        font-size:12px;
+        color:var(--ultraLightText);
+        font-weight:500;
+        height:55px;
+        padding:0 15px;
+        box-sizing: border-box;
+
+        &:nth-child(1){
+          text-align:left;
+        }
+      }
+
+    }
+    tbody{
+      padding:0;
+      width:100%;
+      tr{
+        float:none;
+        padding:0;
+        width:auto;
+      }
+      tr td{
+        float:none;
+        width:auto;
+        box-sizing: border-box;
+        border-top:1px solid var(--mainBackground);
+        height:50px;
+        text-align:center;
+        &:nth-child(1){
+          text-align:left;
+        }
+        &:first-child{
+          padding-left:15px;
+          box-sizing: border-box;
+
+        }
+        &:last-child{
+          padding-right:15px;
+          box-sizing: border-box;
+
+
+        }
+      }
+      tr:last-child{
+        td{
+          border-bottom:1px solid var(--mainBackground);
+
+        }
+      }
+    }
+  }
+
+}
+
+.chart{
+  border-radius: 25px;
+  background-color:var(--background);
+  box-shadow: 1px 1px 5px #CBCBCB;
+  grid-column:1;
+  padding:10px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+
+
+  .chartCanvas{
+    flex:1 100%;
+    width:100%;
+    height:100%;
+  }
+
+  h3{
+    margin:0;
+    padding:15px 20px;
+    box-sizing: border-box;
+    color:var(--lightMain);
+    font-size:25px;
+    font-weight:600;
+    text-align: center;
+  }
+
+}
+
+.list{
+  background-color:var(--background);
+  border-radius: 25px;
+  box-shadow: 1px 1px 5px #CBCBCB;
+  grid-row:1/3;
+  padding:10px;
+  box-sizing:border-box;
+
+  h2{
+    margin:0;
+    padding:10px 20px;
+    box-sizing: border-box;
+    color:var(--lightMain);
+    font-size:35px;
+    font-weight:600;
+  }
+
+}
+
+@media (max-width: 1300px){
+  .dashboard{
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+  }
+  .chart{
+    grid-column:auto;
+  }
+  .list{
+    grid-row:3/5;
+  }
+
+
+
+
+}

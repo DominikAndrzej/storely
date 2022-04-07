@@ -1,0 +1,41 @@
+/*!
+ * All Rights Reserved
+ *
+ * Copyright (c) 2022 Michał Chruścielski
+ */
+
+@mixin button($light: false){
+
+  padding: 7px 20px;
+  box-sizing: border-box;
+  min-width: 50px;
+  font-weight: 400;
+  border-radius: 6px;
+  outline: none;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+
+
+  @if $light{
+    background-color:var(--background);
+    color:var(--lightGray);
+    border:2px solid var(--lightGray);
+    transition:all 100ms;
+
+    &:hover{
+      background-color:var(--lightGray);
+      color:var(--textOnMain);
+    }
+  }
+  @else{
+    background-color:var(--lightMain);
+    color:var(--textOnMain);
+    border:2px solid var(--lightMain);
+
+    &:hover{
+      background-color:var(--lighterMain);
+      color:var(--textOnMain);
+    }
+  }
+}

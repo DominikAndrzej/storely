@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_store">
+
+    <fragment
+        android:id="@+id/navigation_store"
+        android:name="com.example.smartrecordmobileapp.ui.home.StoreFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_store" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_rentals"
+        android:name="com.example.smartrecordmobileapp.ui.dashboard.RentalsFragment"
+        android:label="@string/title_rentals"
+        tools:layout="@layout/fragment_rentals" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.smartrecordmobileapp.ui.notifications.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

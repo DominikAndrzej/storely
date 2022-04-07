@@ -1,0 +1,43 @@
+/*!
+ * All Rights Reserved
+ *
+ * Copyright (c) 2022 Michał Chruścielski
+ */
+
+:root{
+--lightMain:#008DFF;
+--lighterMain:#3693FF;
+--darkMain:#0076FF;
+--mediumMain:#0080FF;
+--navMain:#0089FF;
+--background:#fff;
+--textOnMain:#fff;
+--elementsOnBackground:#000;
+--mainBackground:#F2F2F2;
+--lightText:#7B7B7B;
+--ultraLightText:#A2A2A2;
+--red:#FF6060;
+--switchBackground:#EAEAEA;
+--switchText:#4D4D4D;
+--switchContrastText:#fff;
+--inputPlaceholder:#8D8D8D;
+  --inputBackground:#EAEAEA;
+  //--deepMain:#1F71D0;
+  --deepMain: #0073D6;
+  --specialGray:#F2F3F5;
+  --lightGray:#868686;
+
+}
+@media (prefers-color-scheme: dark) {
+  :root{
+    // --lightMain:#278BFF;
+    // --lighterMain:#36414E;
+    // --darkMain:#262E38;
+    // --mediumMain:#36414E;
+    // --background:#fff;
+    // --textOnMain:#fff;
+    // --elementsOnBackground:#fff;
+    // --mainBackground:#3D3D3D;
+  }
+
+}

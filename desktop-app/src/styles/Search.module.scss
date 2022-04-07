@@ -1,0 +1,26 @@
+.main{
+  height:35px;
+  width:200px;
+
+  background-color:var(--inputBackground);
+  padding:3px 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 17px;
+
+  border:none;
+  outline:none;
+  font-family:'Poppins', sans-serif;
+
+  &:hover{
+    box-shadow: 0px 2px 8px #CBCBCB29;
+  }
+
+  &:focus{
+    box-shadow: 0px 2px 8px #CBCBCB29;
+    border:1px solid var(--lightMain);
+  }
+  &::placeholder{
+    color:var(--inputPlaceholder);
+  }
+}

@@ -1,0 +1,152 @@
+/*!
+ * All Rights Reserved
+ *
+ * Copyright (c) 2022 Michał Chruścielski
+ */
+
+.main{
+  float:left;
+  padding:35px;
+  box-sizing: border-box;
+  width:100%;
+  overflow-y: scroll;
+
+  .widgets{
+    display:flex;
+    column-gap:20px;
+    row-gap:20px;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+  }
+}
+
+.list{
+  margin-top:25px;
+
+  .listHeader{
+
+
+    min-height:95px;
+    border-radius: 15px;
+    background-color: var(--background);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding:0 20px;
+
+    h2{
+      font-weight: 600;
+      font-size:25px;
+      color:var(--lightMain);
+      max-width: 50%;
+    }
+
+    .listHeaderFlex{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap:13px;
+      flex-wrap:nowrap;
+
+    }
+  }
+
+  table{
+    width:100%;
+    margin:0;
+    padding:0;
+    margin-top:10px;
+    //border-collapse: collapse;
+    border-spacing:0 5px;
+
+    thead tr{
+      height:50px;
+
+      margin:0;
+      padding:0;
+
+      th{
+
+        margin:0;
+        padding:0;
+        padding:0 20px;
+        box-sizing: border-box;
+        font-family:'Lato', sans-serif;
+        background-color: var(--background);
+        color:var(--ultraLightText);
+        font-weight: normal;
+      }
+
+      th:first-child{
+        border-radius: 10px 0 0 10px;
+        text-align:left;
+        padding-left:20px;
+
+      }
+      th:last-child{
+        border-radius:0 10px 10px 0;
+        padding-right:20px;
+
+      }
+
+    }
+    .rental{
+      width:100%;
+    }
+    .barTd{
+
+      .flex{
+        display:flex;
+        flex-wrap:nowrap;
+        align-items: center;
+        justify-content: center;
+      }
+
+    }
+    .bar{
+      margin-left:10px;
+      height:15px;
+      width:100px;
+      background-color: var(--mainBackground);
+      border-radius:2px;
+    }
+    .barRed{
+      background-color: var(--red);
+      height:100%;
+    }
+
+
+    tbody tr{
+      margin-top:5px;
+
+      td{
+        box-sizing: border-box;
+        background-color: var(--background);
+        text-align: center;
+        padding:8px 0;
+        width:50px;
+      }
+
+      td:first-child{
+        border-radius: 10px 0 0 10px;
+
+        padding-left:20px;
+        text-align:left;
+
+      }
+      td:last-child{
+        border-radius:0 10px 10px 0;
+
+        padding-right:20px;
+      }
+
+
+
+    }
+  }
+
+
+}

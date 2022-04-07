@@ -1,0 +1,26 @@
+.main{
+  box-shadow: 1px 1px 5px #CBCBCB;
+  height:180px;
+  min-width:200px;
+  //max-width:550px;
+  border-radius: 25px;
+  padding:20px 25px;
+  box-sizing: border-box;
+
+  flex: 1 1 0px;
+  flex-grow:1;
+
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: var(--background);
+
+}
+.number{
+  font-size:60px;
+  font-weight: 500
+}
+.text{
+  font-size:22px;
+  color:var(--lightText);
+}

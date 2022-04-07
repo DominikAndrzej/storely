@@ -1,0 +1,12 @@
+{
+  "settings":
+  {
+    "darkMode": false,
+    "navWidth":300
+  },
+  "api":
+  {
+    "url":"http://localhost:8080/",
+    "token":null
+  }
+}
